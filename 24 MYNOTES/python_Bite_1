@@ -14,6 +14,8 @@ data = data.rename({'v1': 'label', 'v2': 'message'})
 
 # do something of entire column of dataframe 
 data['column1'].apply(len) # identify length of each element in the column1 of data
+df4['one'].map(foo)  
+def foo(x): return np.log(x)
 # create function of your own which takes argument as each element of column and return the modified version
 
 #==================
